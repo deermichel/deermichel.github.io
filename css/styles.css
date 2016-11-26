@@ -1,0 +1,86 @@
+/* general */
+body {
+  background: #eff1f6;
+  color: #123;
+  cursor: default;
+  font-family: "Palanquin", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #123;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Palanquin", sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+button, input, select, textarea {
+  border: none;
+  background: none;
+  color: #123;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+button:focus, select:focus {
+  outline: none;
+}
+
+noscript {
+  display: block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+
+/* header */
+header {
+
+}
+
+/* content -> content.css */
+/*main {
+
+}*/
+
+/* footer */
+footer {
+  bottom: 0;
+  display: inline-block;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+footer a {
+  transition: opacity .3s;
+}
+footer a:hover {
+  opacity: .7;
+}
+footer p {
+  height: 20px;
+  line-height: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+/* responsive */
+/*@media screen and (max-width: 960px) {
+
+}*/
