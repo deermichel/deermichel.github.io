@@ -52,10 +52,34 @@ header {
 
 }
 
-/* content -> content.css */
-/*main {
+/* sneakbar */
+div.sneakbar {
+  bottom: 40px;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 30%;
+  padding-top: 20px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+div.sneakbar:hover {
+  cursor: pointer;
+}
 
-}*/
+div.sneakbar span {
+  display: block;
+  opacity: .7;
+  text-transform: uppercase;
+}
+
+div.sneakbar i {
+  display: block;
+  transition: margin .3s ease-out;
+}
+div.sneakbar:hover i {
+  margin: 6px 0;
+}
 
 /* footer */
 footer {
@@ -63,7 +87,8 @@ footer {
   display: inline-block;
   left: 0;
   padding: 0;
-  position: absolute;
+  position: fixed;
+  transition: transform .3s ease-out, opacity .3s ease-out;
   width: 100%;
 }
 footer a {
@@ -78,9 +103,24 @@ footer p {
   padding-left: 20px;
   text-align: left;
 }
+footer.hide {
+  opacity: 0;
+  transform: translate(0, 110%);
+}
 
 
 /* responsive */
-/*@media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 
-}*/
+  footer {
+    display: none;
+  }
+
+}
+@media screen and (max-height: 400px) {
+
+  div.sneakbar {
+    display: none;
+  }
+
+}
