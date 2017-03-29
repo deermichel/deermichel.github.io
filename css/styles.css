@@ -52,6 +52,23 @@ header {
 
 }
 
+/* party button */
+h1 i.ion-play {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity .3s ease-out, margin-right .3s ease-out, width .3s ease-out;
+  width: 0;
+}
+h1 i.ion-play.show {
+  margin-right: 25px;
+  opacity: 1;
+  width: 50px;
+}
+h1 i.ion-play.show:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
 /* sneakbar */
 div.sneakbar {
   bottom: 40px;
@@ -106,6 +123,21 @@ footer p {
 footer.hide {
   opacity: 0;
   transform: translate(0, 110%);
+}
+
+/* stop party button */
+i.ion-stop {
+  bottom: 13px;
+  position: fixed;
+  right: -100px;
+  transition: opacity .3s ease-out, right .3s ease-out;
+}
+i.ion-stop.show {
+  right: 20px;
+}
+i.ion-stop:hover {
+  cursor: pointer;
+  opacity: .7;
 }
 
 
