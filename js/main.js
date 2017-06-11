@@ -2,6 +2,18 @@
 
 $(function() {
 
+  // parse emoji list and get emoji of the day
+  $.get("/res/emojis.txt", function(data) {
+    var emojis = JSON.parse(data);
+    if (emojis.length == 0) { // today is a bad day
+      $("div.emojioftheday").css("display", "none");
+    };
+    var date = new Date().toISOString().substring(0, 10);
+    var index = Math.abs(sha512(date).hashCode()) % emojis.length;
+    var luckyOne = emojis[index];
+    $("div.emojioftheday span").html(luckyOne);
+  });
+
   // sneakbar click -> scroll to about me
   $("div.sneakbar").click(function() {
     $("#about").velocity("stop").velocity("scroll", {duration: 500, easing: "easeOutCubic", offset: -15});
@@ -25,8 +37,9 @@ $(function() {
   // setup party plugin (at end to prevent compatibility problems affecting the whole page experience)
   var rythm = new Rythm();
   rythm.setMusic("/res/bounce.mp3");
-  rythm.addRythm("rythm-title", "pulse", 0, 5, { mix: 0.85, max: 1.15 });
-  rythm.addRythm("rythm-social", "twist", 100, 50, { mix: -25, max: 25 });
+  rythm.addRythm("rythm-title", "pulse", 0, 5, { min: 0.85, max: 1.15 });
+  rythm.addRythm("rythm-social", "twist", 100, 50, { min: -25, max: 25 });
+  rythm.addRythm("rythm-jump", "jump", 0, 5, { min: 0, max: 10 });
 
   // party button click
   $("h1 i.ion-play").click(function() {
@@ -68,4 +81,15 @@ function scrollHandler() {
     $("footer").removeClass("hide");
   }
 
+}
+
+
+// string hashing extension
+String.prototype.hashCode = function() {
+  var hash = 0;
+  for (var i = 0; i < this.length; i++) {
+      var char = this.charCodeAt(i);
+      var hash = char + (hash << 6) + (hash << 16) - hash;
+  }
+  return hash;
 }

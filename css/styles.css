@@ -52,6 +52,14 @@ header {
 
 }
 
+/* emoji stuff */
+div.emojioftheday span {
+  font-size: 32px;
+  margin-left: 4px;
+  position: relative;
+  top: 8px;
+}
+
 /* party button */
 h1 i.ion-play {
   display: inline-block;
@@ -149,7 +157,7 @@ i.ion-stop:hover {
   }
 
 }
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 560px) {
 
   div.sneakbar {
     display: none;
