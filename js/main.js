@@ -14,6 +14,9 @@ $(function() {
     $("div.emojioftheday span").html(luckyOne);
   });
 
+  // no more yearly updates ;)
+  $("footer .year").text(new Date().getFullYear());
+
   // sneakbar click -> scroll to about me
   $("div.sneakbar").click(function() {
     $("#about").velocity("stop").velocity("scroll", {duration: 500, easing: "easeOutCubic", offset: -15});
