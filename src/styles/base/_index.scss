@@ -1,0 +1,23 @@
+@import "colors";
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg-color;
+    color: $text-color;
+    cursor: default;
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
