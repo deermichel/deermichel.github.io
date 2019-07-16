@@ -1,3 +1,3 @@
-## deermichel.github.io
+# deermichel.github.io
 
 My personal website.
