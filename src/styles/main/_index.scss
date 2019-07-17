@@ -1,25 +1,2 @@
 @import "bg";
-
-main {
-    .title-container {
-        left: 50%;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 300px;
-
-        .title {
-            background: $accent-color;
-            border-radius: 4px;
-            color: $text-color-light;
-            padding: 12px 0;
-        }
-        .subtitle {
-            background: $bg-color-darker;
-            border-radius: 4px;
-            transform: translate(20px, -33%);
-        }
-    }
-}
-
+@import "title";

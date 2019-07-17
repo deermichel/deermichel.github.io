@@ -1,0 +1,33 @@
+main .title-container {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+
+    .profilepic {
+        border: 2px solid $bg-color-darker;
+        border-radius: 100%;
+        filter: grayscale(0.6);
+        height: 112px;
+        transform: translate(-50%, -96px);
+        position: absolute;
+        width: 112px;
+        z-index: 10;
+    }
+
+    .title {
+        background: $accent-color;
+        border-radius: 4px;
+        color: $text-color-light;
+        padding: 12px 0;
+        transform: translate(-12px, 0);
+    }
+
+    .subtitle {
+        background: $bg-color-darker;
+        border-radius: 4px;
+        transform: translate(12px, -33%);
+    }
+}
