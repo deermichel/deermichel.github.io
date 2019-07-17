@@ -5,6 +5,12 @@ main .title-container {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 280px;
+    z-index: 20;
+
+    &.fixed {
+        position: fixed;
+        transform: translate(-50%, calc(-100% - 96px)) !important;
+    }
 
     .profilepic {
         border: 2px solid $bg-color-darker;
