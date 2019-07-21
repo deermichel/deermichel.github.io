@@ -1,7 +1,17 @@
 #header {
+    align-content: center;
+    background: $bg-color;
     border-bottom: 2px solid $accent-color; // darker?
-    padding: 96px 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 460px;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
     text-align: center;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
 }
 
 #header .title-container {
@@ -34,23 +44,23 @@
         background: $bg-color-darker;
         border-radius: 4px;
         transform: translate(12px, -12px);
-    }
-}
-
-#header .bg-container {
-    align-content: center;
-    display: inline-grid;
-    height: 260px; // upstream to #header?
-    justify-content: center;
-    position: absolute;
-    width: 280px;
-
-    .stripe {
-        background: $accent-color-darker;
-        border-radius: 4px;
-        height: 32px;
-        transform: rotate(25deg);
-        // transition: .2s ease-out;
-        width: 100vw;
+    } 
+    
+    .bg-container {
+        align-content: center;
+        display: grid;
+        justify-content: center;
+        position: absolute;
+        width: 280px;
+        z-index: -1;
+    
+        .stripe {
+            background: $accent-color-darker;
+            border-radius: 4px;
+            height: 32px;
+            transform: rotate(25deg);
+            transition: .2s ease-out;
+            width: 100vw;
+        }
     }
 }

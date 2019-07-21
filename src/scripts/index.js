@@ -5,26 +5,21 @@ require("../styles/index.scss")
 const footerYear = document.querySelector("footer .year")
 // footerYear.textContent = new Date().getFullYear()
 
+const bgStripe = document.querySelector("#header .bg-container .stripe")
 const header = document.querySelector("#header")
-const titleContainer = document.querySelector(".title-container")
+const projects = document.querySelectorAll("#content .project")
 
 let skipFrame = false
 window.addEventListener("scroll", (e) => {
     const posY = window.scrollY
     if (!skipFrame) {
         window.requestAnimationFrame(() => {
-            // const progress = Math.min(1, Math.max(1 - titleContainer.getBoundingClientRect().y / titleContainer.offsetTop, 0));
-            
-            // if (progress == 1) {
-            //     header.classList.add("fixed")
-            // } else {
-            //     // header.classList.remove("fixed")
-            // }
-            // if (posY < 260) {
-            //     header.classList.remove("fixed")
-            // }
+            const progress = Math.min(1, posY / 100)
 
-            // console.log(progress)
+            bgStripe.style.transform = `rotate(${25 * (1 - progress)}deg)`
+            bgStripe.style.opacity = 1 - progress
+            header.style.height = `${Math.max(260, 460 - posY)}px`
+            projects.forEach((project) => project.style.transform = `rotate(${25 * (1 - progress)}deg)`)
 
             skipFrame = false
         })
