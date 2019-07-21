@@ -46,21 +46,26 @@
         transform: translate(12px, -12px);
     } 
     
-    .bg-container {
-        align-content: center;
-        display: grid;
-        justify-content: center;
+    .stripe {
+        align-self: center;
+        background: $accent-color-darker;
+        border-radius: 4px;
+        color: $text-color-light;
+        height: 32px;
         position: absolute;
-        width: 280px;
+        transform: rotate(25deg);
+        transition: .2s ease-out;
+        width: 100vw;
         z-index: -1;
-    
-        .stripe {
-            background: $accent-color-darker;
-            border-radius: 4px;
-            height: 32px;
-            transform: rotate(25deg);
-            transition: .2s ease-out;
-            width: 100vw;
-        }
     }
+
+    // &.fixed {
+    //     .profilepic {
+    //         opacity: 0;
+    //     }
+    //     .stripe {
+    //         border-radius: 0;
+    //         height: 100%;
+    //     }
+    // }
 }
