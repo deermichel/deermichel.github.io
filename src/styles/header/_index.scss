@@ -1,11 +1,12 @@
 #header {
     align-content: center;
     background: $bg-color;
-    border-bottom: 2px solid $accent-color; // darker?
+    border-bottom: 2px solid $accent-color-darker;
     box-sizing: border-box;
     display: grid;
     height: 460px;
     justify-content: center;
+    min-height: 80px;
     overflow: hidden;
     position: fixed;
     text-align: center;
@@ -14,7 +15,7 @@
     z-index: 1;
 }
 
-#header .title-container {
+#header .header-container {
     display: inline-flex;
     flex-direction: column;
     height: 260px;
@@ -48,9 +49,11 @@
     
     .stripe {
         align-self: center;
+        align-content: center;
         background: $accent-color-darker;
+        color: transparent;
         border-radius: 4px;
-        color: $text-color-light;
+        display: grid;
         height: 32px;
         position: absolute;
         transform: rotate(25deg);
@@ -59,13 +62,13 @@
         z-index: -1;
     }
 
-    // &.fixed {
-    //     .profilepic {
-    //         opacity: 0;
-    //     }
-    //     .stripe {
-    //         border-radius: 0;
-    //         height: 100%;
-    //     }
-    // }
+    &.fixed {
+        .stripe {
+            border-radius: 0;
+            color: $text-color-light;
+            height: 100vh;
+            opacity: 1 !important;
+            z-index: 1;
+        }
+    }
 }

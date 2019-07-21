@@ -1,12 +1,12 @@
 #content {
+    margin-top: 460px;
 }
 
-#content .showcase {
+#content .projects-container {
     background: $bg-color-darker;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 460px;
     overflow: hidden;
     padding: 48px 0;
 
