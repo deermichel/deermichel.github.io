@@ -1,20 +1,20 @@
 #header {
     align-items: center;
     display: flex;
+    flex-direction: column;
     height: 50vh;
-    justify-content: center;
-    min-height: 260px;
+    min-height: 320px;
     position: fixed;
     text-align: center;
     top: 0;
     transition: .2s ease-out;
     width: 100vw;
-    z-index: -1;
 }
 
 #header .container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     height: 260px;
     justify-content: center;
     width: 280px;
@@ -42,5 +42,34 @@
         background: $bg-color-darker;
         border-radius: 4px;
         transform: translate(12px, -12px);
+    }
+}
+
+#header .links {
+    color: $bg-color-darker;
+    display: flex;
+    justify-self: end;
+    margin-bottom: 12px;
+
+    .icon {
+        border-radius: 100%;
+        margin: 0 12px;
+        padding: 12px;
+        transition: .2s ease-out;
+
+        svg {
+            display: block;
+            fill: none;
+            height: 36px;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            width: 36px;
+        }
+
+        &:hover {
+            color: $accent-color;
+        }
     }
 }

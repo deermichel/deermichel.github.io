@@ -3,15 +3,18 @@
 
     .placeholder {
         height: 50vh;
-        min-height: 260px;
+        min-height: 320px;
     }
 }
 
 #content .showcase {
     background: $bg-color-darker;
-    border-top: 2px solid $accent-color-darker;
+    border-bottom: 2px solid $accent-color; // TODO: replace with next section
+    border-top: 2px solid $accent-color;
     padding: 24px 0;
+    position: relative;
     text-align: center;
+    z-index: 1;
 
     .container {
         display: inline-flex;

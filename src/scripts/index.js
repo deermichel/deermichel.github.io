@@ -3,8 +3,8 @@ require("../styles/index.scss")
 require("@fortawesome/fontawesome-free/js/all")
 
 // set copyright year
-// const footerYear = document.querySelector("footer .year")
-// footerYear.textContent = new Date().getFullYear()
+const footerYear = document.querySelector("#footer .year")
+footerYear.textContent = new Date().getFullYear()
 
 // const stripe = document.querySelector("#header .stripe")
 // const headerContainer = document.querySelector("#header .header-container")
