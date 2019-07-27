@@ -1,3 +1,3 @@
 # deermichel.github.io
 
-My personal website.
+my personal website aka my css playground.
