@@ -28,7 +28,7 @@ window.addEventListener("scroll", (e) => {
             // }
 
             // header.style.filter = `blur(${posY / 80}px)`
-            header.style.opacity = 1 - posY / 260;
+            header.style.opacity = Math.max(0, 1 - posY / 260);
             header.style.transform = `translate(0, -${posY / 3}px)`
 
             skipFrame = false
