@@ -1,25 +1,36 @@
 #content {
-    margin-top: 460px;
+    // display: flex;
+
+    .placeholder {
+        height: 50vh;
+        min-height: 260px;
+    }
 }
 
-#content .projects-container {
-    // background: $bg-color-darker;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
-    padding: 12px;
+#content .showcase {
+    background: $bg-color-darker;
+    border-top: 2px solid $accent-color-darker;
+    padding: 24px 0;
+    text-align: center;
+
+    .container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+        // padding: 24px 0;
+    }
 
     .project {
         align-items: center;
-        // background: $bg-color-darker;
-        border: 2px solid $bg-color-darker;
+        background: $bg-color;
+        // border: 2px solid $bg-color-darker;
         border-radius: 8px;
         display: flex;
         flex-direction: column;
         height: 240px;
         justify-content: center;
-        margin: 12px;
+        margin: 24px;
         width: 240px;
 
         // text-align: center;
