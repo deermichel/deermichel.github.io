@@ -69,7 +69,10 @@
     }
 
     .about {
+        align-items: center;
         border-top: 2px solid $accent-color;
+        display: flex;
+        flex-direction: column;
         padding: 24px;
 
         .heading {
@@ -77,7 +80,6 @@
         }
 
         p {
-            display: inline-block;
             margin-top: 12px;
             max-width: 640px;
 
