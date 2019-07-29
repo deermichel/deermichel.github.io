@@ -15,9 +15,5 @@ module.exports = {
                 "sass-loader"
             ]
         }]
-    },
-
-    plugins: [
-
-    ]
+    }
 }
