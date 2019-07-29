@@ -5,33 +5,25 @@ require("../styles/index.scss")
 const footerYear = document.querySelector("#footer .year")
 footerYear.textContent = new Date().getFullYear()
 
-// const stripe = document.querySelector("#header .stripe")
-// const headerContainer = document.querySelector("#header .header-container")
-
-let skipFrame = false
+// scroll event handler
+let requestFrame = true
 window.addEventListener("scroll", (e) => {
     const posY = window.scrollY
-    if (!skipFrame) {
+    if (requestFrame) {
+        requestFrame = false
         window.requestAnimationFrame(() => {
-            
-            // const progress = Math.min(1, posY / 100)
+            requestFrame = true
 
-            // stripe.style.transform = `rotate(${25 * (1 - progress)}deg)`
-            // stripe.style.opacity = 1 - progress
-            // header.style.height = `${460 - posY}px`
-            
-            // if (progress == 1) {
-            //     headerContainer.classList.add("fixed")
-            // } else {
-            //     headerContainer.classList.remove("fixed")
-            // }
-
-            // header.style.filter = `blur(${posY / 80}px)`
-            header.style.opacity = Math.max(0, 1 - posY / 260);
+            // header parallax
+            header.style.opacity = Math.max(0, 1 - posY / 260)
             header.style.transform = `translate(0, -${posY / 3}px)`
-
-            skipFrame = false
         })
-        skipFrame = true
     }
+})
+
+// load event handler
+window.addEventListener("load", (e) => {
+    // show content after load
+    setTimeout(() => header.style.opacity = null, 200)
+    setTimeout(() => content.style.marginTop = null, 400)
 })

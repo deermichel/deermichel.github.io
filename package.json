@@ -15,7 +15,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "dev": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js"
   }
 }

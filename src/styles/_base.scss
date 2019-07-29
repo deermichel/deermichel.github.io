@@ -21,6 +21,7 @@ body {
     font-family: $base-font;
     font-size: 16px;
     line-height: 1.5;
+    transition: background .2s ease-in;
 }
 
 h1, h2, h3 {

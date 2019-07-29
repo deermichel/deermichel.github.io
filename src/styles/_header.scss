@@ -1,75 +1,76 @@
+$header-height: 50vh;
+$header-min-height: 320px;
+
 #header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    min-height: 320px;
+    height: $header-height;
+    min-height: $header-min-height;
     position: fixed;
     text-align: center;
     top: 0;
     transition: .2s ease-out;
     width: 100vw;
-}
 
-#header .container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    height: 260px;
-    justify-content: center;
-    width: 280px;
-
-    .profilepic {
-        align-self: center;
-        border: 2px solid $bg-color-darker;
-        border-radius: 100%;
-        filter: grayscale(0.6);
-        height: 112px;
-        transform: translate(0, 20px);
-        width: 112px;
-        z-index: 1;
-    }
-
-    .title {
-        background: $accent-color;
-        border-radius: 4px;
-        color: $text-color-light;
-        padding: 12px 0;
-        transform: translate(-12px, 0);
-    }
-
-    .subtitle {
-        background: $bg-color-darker;
-        border-radius: 4px;
-        transform: translate(12px, -12px);
-    }
-}
-
-#header .links {
-    color: $bg-color-darker;
-    display: flex;
-    justify-self: end;
-    margin-bottom: 12px;
-
-    .icon {
-        border-radius: 100%;
-        margin: 0 12px;
-        padding: 12px;
-        transition: .2s ease-out;
-
-        svg {
-            display: block;
-            fill: none;
-            height: 36px;
-            stroke: currentColor;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            width: 36px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 260px;
+        justify-content: center;
+        width: 280px;
+    
+        .profilepic {
+            align-self: center;
+            border: 2px solid $bg-color-darker;
+            border-radius: 100%;
+            filter: grayscale(0.6);
+            height: 112px;
+            transform: translate(0, 20px);
+            width: 112px;
+            z-index: 1;
         }
+    
+        .title {
+            background: $accent-color;
+            border-radius: 4px;
+            color: $text-color-light;
+            padding: 12px 0;
+            transform: translate(-12px, 0);
+        }
+    
+        .subtitle {
+            background: $bg-color-darker;
+            border-radius: 4px;
+            transform: translate(12px, -12px);
+        }
+    }
 
-        &:hover {
-            color: $accent-color;
+    .links {
+        display: flex;
+        margin-bottom: 12px;
+    
+        .icon {
+            border-radius: 100%;
+            color: $bg-color-darker;
+            margin: 0 12px;
+            padding: 12px;
+            transition: .2s ease-out;
+            &:hover {
+                color: $accent-color;
+            }
+    
+            svg {
+                display: block;
+                fill: none;
+                height: 36px;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2;
+                width: 36px;
+            }
         }
     }
 }
