@@ -1,6 +1,5 @@
 // load styles
 require("../styles/index.scss")
-require("@fortawesome/fontawesome-free/js/all")
 
 // set copyright year
 const footerYear = document.querySelector("#footer .year")
