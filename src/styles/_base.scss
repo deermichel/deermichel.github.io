@@ -1,0 +1,37 @@
+// colors
+$accent-color: #44262d;
+// $accent-color-darker: #1f0002;
+$bg-color: #f5f5f6;
+$bg-color-darker: #e6e7e6;
+$text-color: #000000;
+$text-color-light: $bg-color;
+
+// fonts
+$base-font: "Nunito Sans", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg-color;
+    color: $text-color;
+    cursor: default;
+    font-family: $base-font;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: background .2s ease-in;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}

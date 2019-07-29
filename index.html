@@ -1,149 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>deermichel | Coding, Music, More</title>
+<head>
+  <title>deermichel // micha hanselmann</title>
 
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="My personal website.">
-    <meta name="keywords" content="deer,michel,music,coding,sound,audio,programming,cpp,java,logic,guitar,development,portfolio,project,personal,research,web,frontend,html,css,javascript">
-    <meta name="author" content="Micha Hanselmann">
-    <link rel="canonical" href="https://deermichel.me/">
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="my personal website.">
+  <meta name="keywords" content="deer,michel,music,coding,sound,audio,programming,cpp,java,logic,guitar,development,portfolio,project,personal,research,web,frontend,html,css,javascript,node,electron,backend">
+  <meta name="author" content="Micha Hanselmann">
+  <link rel="canonical" href="https://deermichel.me/">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#112233">
+  <!-- TODO: favicon -->
 
-    <!-- styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Palanquin:300" type="text/css">
-    <link rel="stylesheet" href="/css/ionicons.css" type="text/css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <link rel="stylesheet" href="/css/section-about.css" type="text/css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
 
-  </head>
+<body>
+  <!-- for the noscript guys -->
+  <noscript>
+    Please enable JavaScript. No risk, no fun!
+  </noscript>
 
+  <!-- header -->
+  <div id="header" style="opacity: 0;">
+    <div class="container">
+      <img class="profilepic" src="assets/profilepicture.jpg" alt="profile picture">
+      <h1 class="title">deermichel</h1>
+      <h3 class="subtitle">// micha hanselmann</h3>
+    </div>
+    <div class="links">
+      <a class="icon" href="https://github.com/DeerMichel" target="_blank">
+        <svg><use xlink:href="assets/feather-icons.svg#github" /></svg>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/micha-hanselmann" target="_blank">
+        <svg><use xlink:href="assets/feather-icons.svg#linkedin" /></svg>
+      </a>
+      <a class="icon" href="https://open.spotify.com/user/deermichel?si=z6be2lluSmeHakxQVZ_OEQ" target="_blank">
+        <svg><use xlink:href="assets/feather-icons.svg#music" /></svg>
+      </a>
+      <a class="icon" href="mailto:micha.hanselmann@gmail.com">
+        <svg><use xlink:href="assets/feather-icons.svg#mail" /></svg>
+      </a>
+    </div>
+  </div>
 
-  <body>
-
-    <!-- header -->
-    <header>
-
-    </header>
-
-    <!-- content -->
-    <main>
-
-      <h1 class="title rythm-title"><i class="icon ion-play"></i>deermichel</h1>
-
-      <div class="links">
-
-        <a target="_blank" href="https://soundcloud.com/deermichel" class="rythm-social">
-          <i class="icon ion-ios-musical-notes"></i>
-          <span>Music</span>
+  <!-- content -->
+  <div id="content" style="margin-top: 100vh;">
+    <div class="placeholder"></div>
+    <div class="showcase">
+      <div class="container">
+        <a class="project" href="https://github.com/electron/electron" target="_blank">
+          <img class="logo" src="assets/electron_logo.png" alt="electron logo">
+          <h3 class="name">electron</h3>
+          <span class="year">2019</span>
+          <span class="oneliner">unlimited desktop apps.</span>
         </a>
 
-        <a target="_blank" href="https://github.com/DeerMichel" class="rythm-social">
-          <i class="icon ion-ios-bolt"></i>
-          <span>Coding</span>
-        </a>
-
-        <!-- <a target="_blank" href="#misc">
-          <i class="icon ion-ios-color-wand"></i>
-          <span>Misc</span>
+        <!-- <a class="project" href="https://github.com/DeerMichel/reverb" target="_blank">
+          <img class="logo" src="assets/reverb_logo.png" alt="reverb logo">
+          <h3 class="name">reverb</h3>
+          <span class="year">2017</span>
+          <span class="oneliner">a basic reverberator.</span>
         </a> -->
 
-        <a target="_blank" href="https://twitter.com/deermichel" class="rythm-social">
-          <i class="icon ion-social-twitter"></i>
-          <span>Twitter</span>
+        <a class="project" href="https://courtastic.de/" target="_blank">
+          <img class="logo" src="assets/courtastic_logo.png" alt="courtastic logo">
+          <h3 class="name">courtastic</h3>
+          <span class="year">2017</span>
+          <span class="oneliner">tennis in 2k17.</span>
         </a>
 
-        <a href="mailto:micha.hanselmann@gmail.com" class="rythm-social">
-          <i class="icon ion-ios-heart"></i>
-          <span>Connect</span>
+        <a class="project" href="https://github.com/DeerMichel/pedalboard" target="_blank">
+          <img class="logo" src="assets/pedalboard_logo.png" alt="pedalboard logo">
+          <h3 class="name">pedalboard</h3>
+          <span class="year">2016</span>
+          <span class="oneliner">jimi plays chrome.</span>
         </a>
 
+        <a class="project" href="https://github.com/pmkary/arendelle-book" target="_blank">
+          <img class="logo" src="assets/arendelle_logo.png" alt="arendelle logo">
+          <h3 class="name">arendelle</h3>
+          <span class="year">2015</span>
+          <span class="oneliner">ice cold language.</span>
+        </a>
       </div>
-
-      <div class="emojioftheday rythm-jump">
-        <br>
-        Emoji of the day: <span></span>
-      </div>
-
-    </main>
-
-    <div class="sneakbar">
-      <span>About me</span>
-      <i class="icon ion-ios-arrow-down"></i>
     </div>
+  </div>
 
-    <section id="about">
+  <!-- footer -->
+  <div id="footer">
+    &#169; <span class="year">42</span> micha hanselmann.
+  </div>
 
-      <h2 class="title">
-        <img src="/img/profilepicture.jpg" alt="profile picture">
-        A-Z me
-      </h2>
+  <!-- scripts -->
+  <script src="dist.js"></script>
+</body>
 
-      <p class="content">
-        <span>Areas of interest: computer technology, music, mixing both </span> <br>
-        <span>Being creative </span> <br>
-        <span>Chrome is the only browser the world needs </span> <br>
-        <span>DeerMichel first appeared as a Xbox gamertag </span> <br>
-        <span>Endless list of projects </span> <br>
-        <span>For more, check out the links <a href="#">above</a> </span> <br>
-        <span>Guitar is my favorite instrument </span> <br>
-        <span>Hello. My name is Micha Hanselmann </span> <br>
-        <span><a target="_blank" href="https://www.16personalities.com/istj-personality">ISTJ</a>, although a tendency towards <a target="_blank" href="https://www.16personalities.com/estj-personality">ESTJ</a> exists</a> </span> <br>
-        <span>Jesus saved me </span> <br>
-        <span>KIT - that's where I'm studying computer science </span> <br>
-        <span>Lectures at 8AM as well as LaTeX are things I don't like </span> <br>
-        <span>Music I enjoy: (pretty much anything) ... <a target="_blank" href="https://open.spotify.com/user/deermichel">Spotify</a> </span> <br>
-        <span>Nestea is my coffee </span> <br>
-        <span>Open </span> <br>
-        <span>People that inspired me: Steve Jobs, Haley Klinkhammer, (more tba) </span> <br>
-        <span>Q - an O with a fancy tail (@source Urban Dictionary) </span> <br>
-        <span>Real life is where you can find me usually between 9AM and 8PM </span> <br>
-        <span>Software I primarily use: Logic, Atom, eclipse, Spotify </span> <br>
-        <span>The website for surviving math assignments: Wolfram Alpha </span> <br>
-        <span>U do know how a button works? <a target="_blank" href="https://www.youtube.com/watch?v=rksCTVFtjM4">Youtube</a> </span> <br>
-        <span>Vocals could be better </span> <br>
-        <span>Win vs Mac - no need for discussion cause I get along with both </span> <br>
-        <span>X - tried finding it all day long </span> <br>
-        <span>Yeah </span> <br>
-        <span>Zzzzzzz - 7 hours of sleep needed for proper functioning </span> <br>
-      <p>
-
-      <div class="backtotop">
-        <i class="icon ion-ios-arrow-up"></i>
-      </div>
-
-    </section>
-
-
-    <!-- footer -->
-    <footer>
-      <p>
-        &#169; <span class="year">THIS IS YOUR YEAR |</span> deermichel <!--&#8729;-->
-      </p>
-    </footer>
-    <i class="icon ion-stop"></i>
-
-
-    <!-- scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rythm.js/2.0.0/rythm.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.3.0/sha512.min.js"></script>
-    <script src="/js/main.js"></script>
-
-    <!-- for the noscript guys -->
-    <noscript>
-      Please enable JavaScript in order to use all functions of this website.
-    </noscript>
-
-  </body>
 </html>
