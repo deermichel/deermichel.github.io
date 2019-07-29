@@ -3,7 +3,8 @@ module.exports = {
         index: "./src/scripts/index.js",
     },
     output: {
-        filename: "dist.js"
+        filename: "dist.js",
+        path: __dirname
     },
 
     module: {
