@@ -31,11 +31,9 @@
             height: 240px;
             justify-content: center;
             margin: 24px;
+            padding: 12px;
             transition: .2s ease-out;
             width: 240px;
-            &:hover {
-                border-color: $accent-color;
-            }
     
             .logo {
                 background: $bg-color;
@@ -65,6 +63,43 @@
             .oneliner {
                 margin-top: 16px;
             }
+
+            p {
+                display: none;
+            }
+
+            .links {
+                display: none;
+                margin-top: 12px;
+            }
+        }
+        &.detail .project {
+            &:not(.show) {
+                display: none;
+            }
+            &.show {
+                height: auto;
+                max-width: 640px;
+                width: calc(100vw - 48px);
+
+                .oneliner {
+                    display: none;
+                }
+
+                p {
+                    display: block;
+                }
+
+                .links {
+                    display: flex;
+                }
+            }
+        }
+        &:not(.detail) .project {
+            &:hover {
+                border-color: $accent-color;
+                cursor: pointer;
+            }
         }
     }
 
@@ -80,12 +115,7 @@
         }
 
         p {
-            margin-top: 12px;
             max-width: 640px;
-
-            a {
-                font-weight: bold;
-            }
         }
     }
 }

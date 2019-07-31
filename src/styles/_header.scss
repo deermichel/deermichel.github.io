@@ -50,27 +50,5 @@ $header-min-height: 320px;
     .links {
         display: flex;
         margin-bottom: 12px;
-    
-        .icon {
-            border-radius: 100%;
-            color: $bg-color-darker;
-            margin: 0 12px;
-            padding: 12px;
-            transition: .2s ease-out;
-            &:hover {
-                color: $accent-color;
-            }
-    
-            svg {
-                display: block;
-                fill: none;
-                height: 36px;
-                stroke: currentColor;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-width: 2;
-                width: 36px;
-            }
-        }
     }
 }

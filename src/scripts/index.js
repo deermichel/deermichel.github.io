@@ -5,6 +5,24 @@ require("../styles/index.scss")
 const footerYear = document.querySelector("#footer .year")
 footerYear.textContent = new Date().getFullYear()
 
+// project click handler
+const showcase = document.querySelector("#content .showcase")
+const projects = document.querySelectorAll("#content .project")
+projects.forEach((project) => {
+    // enter detail view
+    project.addEventListener("click", (e) => {
+        const target = e.target.closest(".project")
+        target.classList.add("show")
+        showcase.classList.add("detail")
+    })
+    // return to overview
+    project.querySelector(".exitdetail").addEventListener("click", (e) => {
+        project.classList.remove("show")
+        showcase.classList.remove("detail")
+        e.stopPropagation()
+    })
+})
+
 // scroll event handler
 let requestFrame = true
 window.addEventListener("scroll", (e) => {

@@ -35,3 +35,34 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+p {
+    margin-top: 12px;
+
+    a {
+        font-weight: bold;
+    }
+}
+    
+.iconbutton {
+    border-radius: 100%;
+    color: $bg-color-darker;
+    margin: 0 12px;
+    padding: 12px;
+    transition: .2s ease-out;
+    &:hover {
+        color: $accent-color;
+        cursor: pointer;
+    }
+
+    svg {
+        display: block;
+        fill: none;
+        height: 36px;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+        width: 36px;
+    }
+}
