@@ -14,6 +14,7 @@ projects.forEach((project) => {
         const target = e.target.closest(".project")
         target.classList.add("show")
         showcase.classList.add("detail")
+        showcase.scrollIntoView({ behavior: "smooth" })
     })
     // return to overview
     project.querySelector(".exitdetail").addEventListener("click", (e) => {
