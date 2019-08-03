@@ -11,10 +11,12 @@ const projects = document.querySelectorAll("#content .project")
 projects.forEach((project) => {
     // enter detail view
     project.addEventListener("click", (e) => {
-        const target = e.target.closest(".project")
-        target.classList.add("show")
-        showcase.classList.add("detail")
-        showcase.scrollIntoView({ behavior: "smooth" })
+        if (!showcase.classList.contains("detail")) {
+            const target = e.target.closest(".project")
+            target.classList.add("show")
+            showcase.classList.add("detail")
+            showcase.scrollIntoView({ behavior: "smooth" })
+        }
     })
     // return to overview
     project.querySelector(".exitdetail").addEventListener("click", (e) => {
