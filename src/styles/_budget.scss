@@ -1,0 +1,32 @@
+#budget {
+    background: #f2f2f2;
+
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+
+        img {
+            border-radius: 30px;
+            height: 120px;
+            width: 120px;
+        }
+    }
+
+    .section {
+        margin: auto;
+        max-width: 800px;
+        padding: 24px;
+
+        h4 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 4px;
+        }
+    }
+
+    #footer {
+        background: #f2f2f2;
+        border-top: 0;
+    }
+}
