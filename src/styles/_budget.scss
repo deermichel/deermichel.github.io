@@ -15,13 +15,21 @@
     }
 
     .section {
+        display: flex;
+        flex-direction: column;
         margin: auto;
-        max-width: 800px;
+        max-width: 600px;
         padding: 24px;
 
         h4 {
             border-bottom: 2px solid #ddd;
             padding-bottom: 4px;
+        }
+
+        .screenshot {
+            align-self: center;
+            margin-top: 24px;
+            width: 280px;
         }
     }
 
