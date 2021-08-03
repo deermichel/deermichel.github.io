@@ -1,8 +1,12 @@
+// colors
+$text-lighter: #888;
+$text-regular: #555;
+
 // css baseline
 body {
-    background-color: #202020;
-    color: #efefef;
-    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fcfcfc;
+    color: $text-regular;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;

@@ -1,42 +1,47 @@
 @import "base";
 @import "budget";
 
-// body {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: 72px;
-//     font-weight: 900;
-//     text-shadow: 3px 3px #665511, -3px -3px #000;
-// }
+// headings
+h1 {
+    color: $text-lighter;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2 {
+    color: $text-regular;
+    font-size: 24px;
+    font-weight: 700;
+}
+h3 {
+    color: $text-lighter;
+    font-size: 24px;
+    font-weight: 300;
+}
 
-.container {
+// hero
+.hero-container {
     display: flex;
+}
+.hero-image {
+    background-image: url("/assets/longboard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 16px 0;
+    height: 80vh;
+    width: 65vw;
+}
+.hero-motto {
+    max-width: 320px;
+}
+.hero-name {
+    align-self: flex-end;
+    position: absolute;
+}
+.hero-text {
+    align-items: center;
+    display: flex;
+    flex: 1;
     justify-content: center;
-    width: 100vw;
+    text-align: center;
 }
-// .red {
-//     align-items: center;
-//     justify-content: center;
-//     border-radius: 100px;
-//     display: flex;
-//     height: 200px;
-//     transform: translateX(-25%);
-//     width: 200px;
-
-span {
-    display: inline-block;
-    padding: 8px 16px;
-    // background-color: black;
-    background: #231725;
-    font-size: 48px;
-    border: solid #efefef 3px;
-    font-weight: 900;
-    text-shadow: 3px 3px #665511, -3px -3px #000;
-}
-
-// div.yellow {
-//     // background-color: #665521;
-//     height: 200px;
-//     width: 200px;
-// }
