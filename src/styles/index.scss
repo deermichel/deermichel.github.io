@@ -17,10 +17,23 @@ h3 {
     font-size: 24px;
     font-weight: 300;
 }
+h4 {
+    color: $text-regular;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+// front
+.front {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 // hero
 .hero-container {
     display: flex;
+    flex: 1;
 }
 .hero-image {
     background-image: url("/assets/longboard.jpg");
@@ -28,7 +41,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 16px 0;
-    height: 80vh;
     width: 65vw;
 }
 .hero-motto {
@@ -44,4 +56,52 @@ h3 {
     flex: 1;
     justify-content: center;
     text-align: center;
+}
+
+// links
+.links-button {
+    align-items: flex-end;
+    border-radius: 8px;
+    display: flex;
+    margin: 8px;
+    justify-content: center;
+    padding: 8px;
+    width: 96px;
+
+    svg {
+        display: block;
+        fill: none;
+        height: 36px;
+        margin-right: 8px;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5;
+        width: 36px;
+    }
+
+    &.links-code { background: $bg-red; }
+    &.links-mail { background: $bg-yellow; }
+    &.links-music { background: $bg-blue; }
+    &.links-portfolio {
+        justify-content: flex-end;
+        margin: 16px 0;
+        padding-right: 0;
+        width: auto;
+
+        svg {
+            margin-left: 8px;
+            margin-right: 0;
+        }
+    }
+    &.links-work { background: $bg-green; }
+}
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+}
+.links-group {
+    display: flex;
+    padding: 8px;
 }

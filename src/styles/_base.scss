@@ -1,4 +1,8 @@
 // colors
+$bg-blue: hsl(240, 14%, 93%);
+$bg-green: hsl(156, 14%, 93%);
+$bg-red: hsl(0, 14%, 93%);
+$bg-yellow: hsl(48, 14%, 93%);
 $text-lighter: #888;
 $text-regular: #555;
 
@@ -8,6 +12,7 @@ body {
     color: $text-regular;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     margin: 0;
     user-select: none;
