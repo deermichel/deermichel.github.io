@@ -112,12 +112,33 @@ h4 {
 }
 
 // portfolio
+.portfolio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    h1 { margin-top: 24px; }
+}
 .portfolio-container {
+    // background: red;
+    align-items: flex-end;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1024px;
+}
+.portfolio-header {
+    background-attachment: fixed;
+    background-image: url("/assets/stones.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.1) grayscale(0.6);
+    height: 180px;
+    margin-top: 96px;
+    width: 100%;
 }
 .portfolio-item {
-    // background-color: red;
     display: flex;
     flex-direction: column;
     margin: 24px;
@@ -126,7 +147,6 @@ h4 {
 .portfolio-links {
     align-self: flex-end;
     display: flex;
-    // margin-top: 4px;
     text-decoration: underline;
 
     a { margin-left: 16px; }
@@ -135,14 +155,4 @@ h4 {
     border-radius: 8px;
     height: 36px;
     width: 36px;
-}
-.portfolio-sideimage {
-    align-items: center;
-    // background: green;
-    display: flex;
-    margin: 24px;
-
-    img { width: 200px; }
-
-    .portfolio-item { margin: 0; }
 }
