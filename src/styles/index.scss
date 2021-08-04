@@ -66,6 +66,7 @@ h4 {
     margin: 8px;
     justify-content: center;
     padding: 8px;
+    transition: .2s ease-out;
     width: 96px;
 
     svg {
@@ -80,9 +81,14 @@ h4 {
         width: 36px;
     }
 
-    &.links-code { background: $bg-red; }
-    &.links-mail { background: $bg-yellow; }
-    &.links-music { background: $bg-blue; }
+    @mixin hover-darken($color) {
+        background: $color;
+        &:hover { background: darken($color, 5%); }
+    }
+    &.links-code { @include hover-darken($bg-red); }
+    &.links-work { @include hover-darken($bg-green); }
+    &.links-music { @include hover-darken($bg-blue); }
+    &.links-mail { @include hover-darken($bg-yellow); }
     &.links-portfolio {
         justify-content: flex-end;
         margin: 16px 0;
@@ -94,7 +100,6 @@ h4 {
             margin-right: 0;
         }
     }
-    &.links-work { background: $bg-green; }
 }
 .links-container {
     display: flex;
