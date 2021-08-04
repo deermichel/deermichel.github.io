@@ -26,4 +26,9 @@ body {
 a {
     color: inherit;
     text-decoration: inherit;
+    transition: opacity .2s ease-out;
+    
+    &:hover {
+        opacity: .6;
+    }
 }
