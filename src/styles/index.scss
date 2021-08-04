@@ -110,3 +110,39 @@ h4 {
     display: flex;
     padding: 8px;
 }
+
+// portfolio
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    width: 352px;
+}
+.portfolio-links {
+    align-self: flex-end;
+    display: flex;
+    // margin-top: 4px;
+    text-decoration: underline;
+
+    a { margin-left: 16px; }
+}
+.portfolio-logo {
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+}
+.portfolio-sideimage {
+    align-items: center;
+    // background: green;
+    display: flex;
+    margin: 24px;
+
+    img { width: 200px; }
+
+    .portfolio-item { margin: 0; }
+}
