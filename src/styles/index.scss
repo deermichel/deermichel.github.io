@@ -35,10 +35,9 @@ h5 {
     height: 100vh;
     min-height: 480px;
 
-    @media only screen and (max-width: 768px) {
-        height: -moz-available;
-        height: -webkit-fill-available; 
-        height: fill-available;
+    // 100vh mobile fix (https://github.com/postcss/postcss-100vh-fix)
+    @supports (-webkit-touch-callout: none) {
+        height: -webkit-fill-available;
     }
 }
 
@@ -211,9 +210,9 @@ h5 {
     height: 192px;
     width: 100%;
 
-    @media only screen and (max-width: 768px) {
-        background-attachment: scroll;
-    }
+    // @media only screen and (max-width: 768px) {
+    //     background-attachment: scroll;
+    // }
 }
 .portfolio-item {
     display: flex;

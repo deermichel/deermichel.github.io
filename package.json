@@ -5,6 +5,10 @@
   "repository": "https://github.com/DeerMichel/deermichel.github.io",
   "author": "Micha Hanselmann",
   "private": true,
+  "scripts": {
+    "dev": "webpack serve --mode=development --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
   "devDependencies": {
     "css-loader": "^6.2.0",
     "sass": "^1.37.2",
@@ -14,8 +18,7 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },
-  "scripts": {
-    "dev": "webpack serve --mode=development --config webpack.config.js",
-    "build": "webpack --mode=production --config webpack.config.js"
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
   }
 }
