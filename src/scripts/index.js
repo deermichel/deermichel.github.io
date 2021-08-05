@@ -3,7 +3,7 @@ require("../styles/index.scss")
 
 // smooth scrolling polyfill
 const smoothscroll = require("smoothscroll-polyfill")
-smoothscroll.polyfill();
+smoothscroll.polyfill()
 
 // set copyright year
 const footerYear = document.querySelector("footer .year")
@@ -11,7 +11,7 @@ footerYear.textContent = new Date().getFullYear()
 
 // mobile device
 const portfolioHeader = document.querySelector(".portfolio-header")
-const isMobile = /Android|iPhone|iPad|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const isMobile = /Android|iPhone|iPad|iPod|IEMobile|Opera Mini/i.test(navigator.userAgent)
 if (isMobile) {
     // background attachment fallback
     portfolioHeader.style.backgroundAttachment = "scroll"
@@ -24,8 +24,7 @@ portfolioLink.addEventListener('click', (e) => {
     portfolioHeader.scrollIntoView({ behavior: 'smooth' })
 })
 
-// load event handler
-window.addEventListener("load", (e) => {
-    // show content after load
-    document.body.style.opacity = null;
-})
+// show content after loading js
+setTimeout(() => {
+    document.body.style.opacity = null
+}, 200)
