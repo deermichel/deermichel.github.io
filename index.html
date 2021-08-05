@@ -2,175 +2,235 @@
 <html lang="en">
 
 <head>
-  <title>deermichel // micha hanselmann</title>
+  <title>deermichel. micha hanselmann</title>
 
   <!-- meta -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="my personal website.">
-  <meta name="keywords" content="deer,michel,music,coding,sound,audio,programming,cpp,java,logic,guitar,development,portfolio,project,personal,research,web,frontend,html,css,javascript,node,electron,backend">
+  <meta name="keywords" content="deer,michel,music,coding,sound,audio,programming,cpp,java,logic,guitar,development,portfolio,project,personal,research,web,creativity,effects,showcase,frontend,html,css,javascript,node,microsoft,budget,courtastic,electron,backend">
   <meta name="author" content="Micha Hanselmann">
   <link rel="canonical" href="https://deermichel.me/">
 
   <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#44262d">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- for the noscript guys -->
   <noscript>
-    Please enable JavaScript. No risk, no fun!
+    please enable javascript. no risk, no fun!
   </noscript>
 
-  <!-- header -->
-  <div id="header" style="opacity: 0;">
-    <div class="container">
-      <img class="profilepic" src="assets/profilepicture.jpg" alt="profile picture">
-      <h1 class="title">deermichel</h1>
-      <h3 class="subtitle">// micha hanselmann</h3>
-    </div>
-    <div class="links">
-      <a class="iconbutton" href="https://github.com/DeerMichel" target="_blank">
-        <svg><use xlink:href="assets/feather-icons.svg#github" /></svg>
-      </a>
-      <a class="iconbutton" href="https://www.linkedin.com/in/micha-hanselmann" target="_blank">
-        <svg><use xlink:href="assets/feather-icons.svg#linkedin" /></svg>
-      </a>
-      <a class="iconbutton" href="https://open.spotify.com/user/deermichel?si=z6be2lluSmeHakxQVZ_OEQ" target="_blank">
-        <svg><use xlink:href="assets/feather-icons.svg#music" /></svg>
-      </a>
-      <a class="iconbutton" href="mailto:micha.hanselmann@gmail.com">
-        <svg><use xlink:href="assets/feather-icons.svg#mail" /></svg>
-      </a>
-    </div>
-  </div>
-
-  <!-- content -->
-  <div id="content" style="margin-top: 100vh;">
-    <div class="placeholder"></div>
-    <div class="showcase">
-      <div class="container">
-        <div class="project">
-          <img class="logo" src="assets/electron_logo.png" alt="electron logo">
-          <h3 class="name">electron</h3>
-          <span class="year">2019</span>
-          <span class="oneliner">unlimited desktop apps.</span>
-          <p>
-            i had the great opportunity to intern at 
-            <a href="https://internships.github.com/" target="_blank">github</a> 
-            during summer 2019. there i became part of the electron core team and joined the
-            <a href="https://github.com/electron/governance#electron-governance" target="_blank">releases working group</a>.
-          </p>
-          <p>
-            couple things i worked on were bugfixes (of course), everyday chores and bringing
-            os-specific features to more systems. you might also notice a <i>launch</i> button
-            on some of the api examples on electronjs.org - that was me as well.
-          </p>
-          <div class="links">
-            <div class="iconbutton exitdetail">
-              <svg><use xlink:href="assets/feather-icons.svg#arrow-left" /></svg>
-            </div>
-            <a class="iconbutton" href="https://github.com/electron/electron" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#github" /></svg>
-            </a>
-            <a class="iconbutton" href="https://electronjs.org/" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#compass" /></svg>
-            </a>
-          </div>
+  <!-- front page -->
+  <header class="front">
+    <!-- hero -->
+    <div class="hero-container">
+      <div class="hero-image"></div>
+      <div class="hero-text">
+        <div class="hero-motto">
+          <h3><i>being creative in coding, electronics and music.</i></h3>
         </div>
-
-        <!-- <a class="project" href="https://github.com/DeerMichel/reverb" target="_blank">
-          <img class="logo" src="assets/reverb_logo.png" alt="reverb logo">
-          <h3 class="name">reverb</h3>
-          <span class="year">2017</span>
-          <span class="oneliner">a basic reverberator.</span>
-        </a> -->
-
-        <div class="project">
-          <img class="logo" src="assets/courtastic_logo.png" alt="courtastic logo">
-          <h3 class="name">courtastic</h3>
-          <span class="year">2017</span>
-          <span class="oneliner">tennis in 2k17.</span>
-          <!-- <p></p> -->
-          <div class="links">
-            <div class="iconbutton exitdetail">
-              <svg><use xlink:href="assets/feather-icons.svg#arrow-left" /></svg>
-            </div>
-            <a class="iconbutton" href="https://courtastic.de/" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#compass" /></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="project">
-          <img class="logo" src="assets/pedalboard_logo.png" alt="pedalboard logo">
-          <h3 class="name">pedalboard</h3>
-          <span class="year">2016</span>
-          <span class="oneliner">jimi plays chrome.</span>
-          <!-- <p></p> -->
-          <div class="links">
-            <div class="iconbutton exitdetail">
-              <svg><use xlink:href="assets/feather-icons.svg#arrow-left" /></svg>
-            </div>
-            <a class="iconbutton" href="https://github.com/DeerMichel/pedalboard" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#github" /></svg>
-            </a>
-            <a class="iconbutton" href="https://deermichel.me/pedalboard/" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#compass" /></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="project">
-          <img class="logo" src="assets/arendelle_logo.png" alt="arendelle logo">
-          <h3 class="name">arendelle</h3>
-          <span class="year">2015</span>
-          <span class="oneliner">ice cold language.</span>
-          <!-- <p></p> -->
-          <div class="links">
-            <div class="iconbutton exitdetail">
-              <svg><use xlink:href="assets/feather-icons.svg#arrow-left" /></svg>
-            </div>
-            <a class="iconbutton" href="https://github.com/pmkary/arendelle-book#the-arendelle-book" target="_blank">
-              <svg><use xlink:href="assets/feather-icons.svg#book-open" /></svg>
-            </a>
-          </div>
+        <div class="hero-name">
+          <h1>@deermichel</h1>
+          <h2>micha hanselmann</h2>
         </div>
       </div>
     </div>
-    <div class="about">
-      <h3 class="heading">hey there.</h3>
-      <p>
-        i'm micha, a computer science student based in lovely 
-        <a href="https://www.google.com/maps/place/Karlsruhe,+Germany" target="_blank">karlsruhe, germany</a>.
-        you'll usually find me experimenting with web technology, low-level hardware stuff
-        or multimedia.
-      </p>
-      <p>
-        people consider me to be a musician - let's say i have a passion for homerecording
-        and playing some instruments might be useful for that.
-        what else... i believe the most important thing in life is to  
-        <a href="https://open.spotify.com/track/57HyPqxuE3CrswAsX3hEVE?si=4dw7GxmDTQSuGrRZI-yoFg" target="_blank">love god & love people</a>.
-      </p>
-      <p>
-        caps are omitted here just for the sake of the argument. if that doesn't bother you, feel
-        free to hit me up - i'm always down for a chitty chatty about tech, music, life or whatever
-        you wanna talk about.
-      </p>
+
+    <!-- links -->
+    <nav class="links-container">
+      <div class="links-group">
+        <a class="links-button links-code" href="https://github.com/deermichel" target="_blank">
+          <svg><use xlink:href="assets/feather-icons.svg#github" /></svg>
+          <h4>code</h4>
+        </a>
+        <a class="links-button links-work" href="https://www.linkedin.com/in/micha-hanselmann/" target="_blank">
+          <svg><use xlink:href="assets/feather-icons.svg#linkedin" /></svg>
+          <h4>work</h4>
+        </a>
+        <a class="links-button links-music" href="https://open.spotify.com/user/deermichel?si=fe1bf64901174b66" target="_blank">
+          <svg><use xlink:href="assets/feather-icons.svg#music" /></svg>
+          <h4>music</h4>
+        </a>
+        <a class="links-button links-mail" href="mailto:micha.hanselmann@gmail.com">
+          <svg><use xlink:href="assets/feather-icons.svg#mail" /></svg>
+          <h4>say hi</h4>
+        </a>
+      </div>
+      <a class="links-button links-portfolio" href="#portfolio">
+        <h4>portfolio</h4>
+        <svg><use xlink:href="assets/feather-icons.svg#arrow-down" /></svg>
+      </a>
+    </nav>
+  </header>
+
+  <!-- content -->
+  <main>
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio-header"></div>
+      <h1>things i built / worked on</h1>
+      <div class="portfolio-container">
+
+        <div class="portfolio-item">
+          <img src="assets/portfolio/soundboard.png" alt="soundboard screenshot" />
+          <h2>soundboard, 2021</h2>
+          <p>a live-performance music playground inviting everybody to get creative and to experiment with sounds.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/deermichel/soundboard" target="_blank">
+              <h4>github</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img width="160px" src="assets/portfolio/budget.png" alt="budget screenshot" />
+          <h2>budget, 2020</h2>
+          <p>a stripped-down tool to keep your daily expenses under control. it came to existence as a worthy replacement for my former excel sheets.</p>
+          <div class="portfolio-links">
+            <a href="https://apps.apple.com/tt/app/budget-master-your-finances/id1544237801" target="_blank">
+              <h4>app store</h4>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=me.deermichel.budget" target="_blank">
+              <h4>play store</h4>
+            </a>
+          </div>
+        </div>
+          
+        <div class="portfolio-item">
+          <h2>tlbchannels, 2020</h2>
+          <p>my bachelor's thesis where i analyzed a hardware security vulnerability capable of breaking isolation in virtualized cloud environments.</p>
+          <div class="portfolio-links">
+            <a href="https://os.itec.kit.edu/21_3738.php" target="_blank">
+              <h4>cite</h4>
+            </a>
+            <a href="https://github.com/deermichel/tlbchannels" target="_blank">
+              <h4>github</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img class="portfolio-logo" src="assets/portfolio/electron.png" alt="electron logo" />
+          <h2>electron, 2019</h2>
+          <p>i had the great opportunity to intern at github during summer 2019. there i was part of the electron core team and joined the releases working group.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/electron/electron" target="_blank">
+              <h4>github</h4>
+            </a>
+            <a href="https://internships.github.com/" target="_blank">
+              <h4>interns</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="assets/portfolio/courtastic.png" alt="courtastic screenshot" />
+          <h2>courtastic, 2017</h2>
+          <p>together with florian, we founded a sports tech startup and created a platform to revive tennis clubs in the digital age. later aquired by playsports.</p>
+          <div class="portfolio-links">
+            <a href="https://pfisterer.dev/" target="_blank">
+              <h4>florian</h4>
+            </a>
+            <a href="https://playsports.world/" target="_blank">
+              <h4>playsports</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="assets/portfolio/pedalboard.png" alt="pedalboard screenshot" />
+          <h2>pedalboard, 2016</h2>
+          <p>i built this online live guitar pedalboard while experimenting with the web audio api. my favorite feature is the qr code board sharing.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/deermichel/pedalboard" target="_blank">
+              <h4>github</h4>
+            </a>
+            <a href="https://deermichel.me/pedalboard/" target="_blank">
+              <h4>let's play</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="assets/portfolio/arendelle.png" alt="arendelle header" />
+          <h2>arendelle, 2015</h2>
+          <p>together with pouya, we envisioned a programming language designed to help you create beautiful things while learning how to program.</p>
+          <div class="portfolio-links">
+            <a href="https://github.com/pouyakary/arendelle-book" target="_blank">
+              <h4>docs</h4>
+            </a>
+            <a href="https://github.com/deermichel?tab=repositories&q=arendelle" target="_blank">
+              <h4>github</h4>
+            </a>
+            <a href="https://kary.us/" target="_blank">
+              <h4>pouya</h4>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- about, recruit -->
+    <div class="me-container">
+      <div class="me-image"></div>
+      <div class="me-text">
+        <div class="me-sections">
+          <!-- about -->
+          <section>
+            <h1>hey there</h1>
+            <p>
+              i'm micha, a software engineer currently working at playsports. <!--microsoft skype as 
+              part of the platforms team.--> you'll usually find me experimenting with web 
+              technology, low-level hardware stuff or multimedia.
+            </p>
+            <p>
+              i'm deeply passionate about music, inspiring people and i take every day 
+              as an opportunity to grow. at the end of my life i wanna say that i'd loved 
+              god & people with all my heart.
+            </p>
+            <p>
+              that's me. feel free to hit me up - i'm always down for a chitty chatty about 
+              tech, music, life or whatever you wanna talk about.
+            </p>
+          </section>
+
+          <!-- recruit -->
+          <section>
+            <h1>recruit me</h1>
+            <p>i'm always open for new opportunities.</p>
+            <p><b>what i'm looking for</b></p>
+            <ul>
+              <li>jobs related to creative things (audio, graphics, pyrotechnics)</li>
+              <li>positions where i can teach people and learn from others</li>
+              <li>new technologies & stuff i haven't done before</li>
+            </ul>
+            <p><b>what i'm not looking for</b></p>
+            <ul>
+              <li>jobs with the sole task of working off a kanban board</li>
+              <li>websites, crud apps, react dashboards, tables & dialogs, sap</li>
+              <li>maintaining haunted graveyards of legacy systems</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
-  </div>
+  </main>
 
   <!-- footer -->
-  <div id="footer">
-    &#169; <span class="year">42</span> micha hanselmann.
-  </div>
+  <footer>
+    <h5><i>&#169; <span class="year"></span> micha hanselmann.</i></h5>
+  </footer>
 
   <!-- scripts -->
   <script src="dist.js"></script>

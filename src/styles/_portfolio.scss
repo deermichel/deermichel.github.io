@@ -1,0 +1,50 @@
+// portfolio
+.portfolio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 96px;
+
+    h1 { margin-top: 48px; }
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 48px;
+        h1 { font-size: 24px; }
+    }
+}
+.portfolio-container {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1024px;
+}
+.portfolio-header {
+    background-attachment: fixed;
+    background-image: url("/assets/stones.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 192px;
+    width: 100%;
+}
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    margin: 48px;
+    max-width: 352px;
+
+    img { max-width: 100%; } // safari fix
+}
+.portfolio-links {
+    align-self: flex-end;
+    display: flex;
+    text-decoration: underline;
+
+    a { margin-left: 16px; }
+}
+.portfolio-logo {
+    border-radius: 8px;
+    height: 36px;
+    width: 36px;
+}

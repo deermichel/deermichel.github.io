@@ -1,54 +1,142 @@
-$header-height: 50vh;
-$header-min-height: 320px;
-
-#header {
-    align-items: center;
+// front
+.front {
     display: flex;
     flex-direction: column;
-    height: $header-height;
-    min-height: $header-min-height;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    transition: .2s ease-out;
-    width: 100vw;
+    height: 100vh;
+    min-height: 480px;
 
-    .container {
-        display: flex;
+    // 100vh mobile fix (https://github.com/postcss/postcss-100vh-fix)
+    @supports (-webkit-touch-callout: none) {
+        height: -webkit-fill-available;
+    }
+}
+
+// hero
+.hero-container {
+    display: flex;
+    flex: 1;
+
+    @media only screen and (max-width: 768px) {
         flex-direction: column;
-        flex-grow: 1;
-        height: 260px;
-        justify-content: center;
-        width: 280px;
-    
-        .profilepic {
-            align-self: center;
-            border: 2px solid $bg-color-darker;
-            border-radius: 100%;
-            filter: grayscale(0.6);
-            height: 112px;
-            transform: translate(0, 20px);
-            width: 112px;
-            z-index: 1;
-        }
-    
-        .title {
-            background: $accent-color;
-            border-radius: 4px;
-            color: $text-color-light;
-            padding: 12px 0;
-            transform: translate(-12px, 0);
-        }
-    
-        .subtitle {
-            background: $bg-color-darker;
-            border-radius: 4px;
-            transform: translate(12px, -12px);
+    }
+}
+.hero-image {
+    background-image: url("/assets/longboard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 16px 0;
+    width: 65vw;
+
+    @media only screen and (max-width: 768px) {
+        border-radius: 0;
+        flex: 1;
+        width: 100vw;
+    }
+}
+.hero-motto {
+    margin: 16px 0;
+    max-width: 320px;
+}
+.hero-name {
+    align-self: flex-end;
+    position: absolute;
+
+    @media only screen and (max-width: 768px) {
+        align-self: center;
+        position: static;
+        h1 { display: none; }
+    }
+}
+.hero-text {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        flex: 0;
+        flex-direction: column;
+    }
+}
+
+// links
+.links-button {
+    align-items: flex-end;
+    border-radius: 8px;
+    display: flex;
+    margin: 8px;
+    justify-content: center;
+    padding: 8px;
+    width: 96px;
+
+    svg {
+        display: block;
+        fill: none;
+        height: 36px;
+        margin-right: 8px;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5;
+        width: 36px;
+    }
+
+    @mixin hover-color($color) {
+        opacity: 1;
+        transition: background .2s ease-out;
+        &:hover { background: $color; }
+    }
+    &.links-code { @include hover-color($bg-red); }
+    &.links-work { @include hover-color($bg-green); }
+    &.links-music { @include hover-color($bg-blue); }
+    &.links-mail { @include hover-color($bg-yellow); }
+    &.links-portfolio {
+        justify-content: flex-end;
+        margin: 16px 0;
+        padding-right: 0;
+        width: auto;
+
+        svg {
+            margin-left: 8px;
+            margin-right: 0;
         }
     }
 
-    .links {
-        display: flex;
-        margin-bottom: 12px;
+    @media only screen and (max-width: 768px) {
+        align-items: center;
+        svg { height: 24px; width: 24px; }
+        &.links-portfolio h4 { display: none; }
+        &.links-portfolio {
+            justify-content: center;
+            margin-top: 0;
+            padding-right: 8px;
+            width: 36px;
+            svg { margin-left: 0; }
+        }
     }
+    @media only screen and (max-width: 1024px) {
+        height: 36px;
+        width: 36px;
+        &:not(.links-portfolio) h4 { display: none; }
+        svg { margin: 0; }
+    }
+}
+.links-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    width: 65vw;
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        height: initial;
+        width: 100%;
+    }
+}
+.links-group {
+    display: flex;
+    padding: 8px;
 }

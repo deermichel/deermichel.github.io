@@ -1,5 +1,7 @@
 #budget {
-    background: #f2f2f2;
+    h1 {
+        color: $text-regular;
+    }
 
     .header {
         align-items: center;
@@ -33,8 +35,7 @@
         }
     }
 
-    #footer {
-        background: #f2f2f2;
-        border-top: 0;
+    footer {
+        margin-top: 16px;
     }
 }

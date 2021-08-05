@@ -1,5 +1,11 @@
 @import "base";
-@import "header";
-@import "content";
-@import "footer";
 @import "budget";
+@import "header";
+@import "portfolio";
+@import "about";
+
+// footer
+footer {
+    margin: 96px 0 16px 0;
+    text-align: center;
+}

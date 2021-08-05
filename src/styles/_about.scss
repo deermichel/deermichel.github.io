@@ -1,0 +1,46 @@
+// about, recruit me
+.me-container {
+    display: flex;
+    margin-top: 48px;
+
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin: 48px auto 0 auto;
+        max-width: 536px;
+    }
+}
+.me-image {
+    background-image: url("/assets/me.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 16px 16px 0;
+    width: 420px;
+
+    @media only screen and (max-width: 1024px) {
+        border-radius: 16px;
+        height: 120px;
+        margin: 0 0 16px 48px;
+        width: 120px;
+    }
+}
+.me-sections {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+    padding: 0 48px;
+
+    p {
+        margin-top: 16px;
+        &:first-of-type { margin-top: 0; }
+    }
+    section {
+        margin-top: 48px;
+        &:first-of-type { margin-top: 0; }
+    }
+}
+.me-text {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}

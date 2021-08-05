@@ -1,68 +1,61 @@
 // colors
-$accent-color: #44262d;
-// $accent-color-darker: #1f0002;
-$bg-color: #f5f5f6;
-$bg-color-darker: #e6e7e6;
-$text-color: #000000;
-$text-color-light: $bg-color;
+$bg-blue: hsl(240, 14%, 93%);
+$bg-green: hsl(156, 14%, 93%);
+$bg-red: hsl(0, 14%, 93%);
+$bg-yellow: hsl(48, 14%, 93%);
+$text-lighter: #888;
+$text-regular: #555;
 
-// fonts
-$base-font: "Nunito Sans", sans-serif;
-
+// css baseline
+body {
+    background-color: #fcfcfc;
+    color: $text-regular;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    user-select: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
 * {
     margin: 0;
     padding: 0;
 }
-
-body {
-    background: $bg-color;
-    color: $text-color;
-    cursor: default;
-    font-family: $base-font;
-    font-size: 16px;
-    line-height: 1.5;
-    transition: background .2s ease-in;
-}
-
-h1, h2, h3 {
-    font-weight: normal;
-}
-h1 { font-size: 48px; }
-h2 { font-size: 36px; }
-h3 { font-size: 24px; }
-
 a {
     color: inherit;
     text-decoration: inherit;
-}
-
-p {
-    margin-top: 12px;
-
-    a {
-        font-weight: bold;
-    }
-}
+    transition: opacity .2s ease-out;
     
-.iconbutton {
-    border-radius: 100%;
-    color: $bg-color-darker;
-    margin: 0 12px;
-    padding: 12px;
-    transition: .2s ease-out;
     &:hover {
-        color: $accent-color;
-        cursor: pointer;
+        opacity: .6;
     }
+}
 
-    svg {
-        display: block;
-        fill: none;
-        height: 36px;
-        stroke: currentColor;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2;
-        width: 36px;
-    }
+// headings
+h1 {
+    color: $text-lighter;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2 {
+    color: $text-regular;
+    font-size: 24px;
+    font-weight: 700;
+}
+h3 {
+    color: $text-lighter;
+    font-size: 24px;
+    font-weight: 300;
+}
+h4 {
+    color: $text-regular;
+    font-size: 16px;
+    font-weight: 600;
+}
+h5 {
+    color: $text-lighter;
+    font-size: 16px;
+    font-weight: 300;
 }
