@@ -32,3 +32,30 @@ a {
         opacity: .6;
     }
 }
+
+// headings
+h1 {
+    color: $text-lighter;
+    font-size: 36px;
+    font-weight: 700;
+}
+h2 {
+    color: $text-regular;
+    font-size: 24px;
+    font-weight: 700;
+}
+h3 {
+    color: $text-lighter;
+    font-size: 24px;
+    font-weight: 300;
+}
+h4 {
+    color: $text-regular;
+    font-size: 16px;
+    font-weight: 600;
+}
+h5 {
+    color: $text-lighter;
+    font-size: 16px;
+    font-weight: 300;
+}

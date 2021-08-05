@@ -1,3 +1,0 @@
-- clean up html, refactor css
-- deploy
-- switch msft
