@@ -33,12 +33,23 @@ h5 {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    min-height: 480px;
+
+    @media only screen and (max-width: 768px) {
+        height: -moz-available;
+        height: -webkit-fill-available; 
+        height: fill-available;
+    }
 }
 
 // hero
 .hero-container {
     display: flex;
     flex: 1;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .hero-image {
     background-image: url("/assets/longboard.jpg");
@@ -48,13 +59,27 @@ h5 {
     border-radius: 0 0 16px 0;
     // filter: opacity(0.3) grayscale(0.2);
     width: 65vw;
+
+    @media only screen and (max-width: 768px) {
+        // height: 65vh;
+        border-radius: 0;
+        flex: 1;
+        width: 100vw;
+    }
 }
 .hero-motto {
+    margin: 16px 0;
     max-width: 320px;
 }
 .hero-name {
     align-self: flex-end;
     position: absolute;
+
+    @media only screen and (max-width: 768px) {
+        align-self: center;
+        position: static;
+        h1 { display: none; }
+    }
 }
 .hero-text {
     align-items: center;
@@ -62,6 +87,12 @@ h5 {
     flex: 1;
     justify-content: center;
     text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        // height: 65vh;
+        flex: 0;
+        flex-direction: column;
+    }
 }
 
 // links
@@ -73,6 +104,7 @@ h5 {
     justify-content: center;
     padding: 8px;
     width: 96px;
+    // background: red;
 
     svg {
         display: block;
@@ -107,15 +139,42 @@ h5 {
             margin-right: 0;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        align-items: center;
+        svg { height: 24px; width: 24px; }
+        &.links-portfolio h4 { display: none; }
+        &.links-portfolio {
+            justify-content: center;
+            margin-top: 0;
+            padding-right: 8px;
+            width: 36px;
+            svg { margin-left: 0; }
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        height: 36px;
+        width: 36px;
+        &:not(.links-portfolio) h4 { display: none; }
+        svg { margin: 0; }
+    }
 }
 .links-container {
+    // background: green;
     align-items: center;
     display: flex;
     justify-content: space-between;
     height: 96px;
     width: 65vw;
+    
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        height: initial;
+        width: 100%;
+    }
 }
 .links-group {
+    // background: grey;
     display: flex;
     padding: 8px;
 }
@@ -128,6 +187,11 @@ h5 {
     margin-top: 96px;
 
     h1 { margin-top: 48px; }
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 48px;
+        h1 { font-size: 24px; }
+    }
 }
 .portfolio-container {
     // background: red;
@@ -146,12 +210,20 @@ h5 {
     // filter: opacity(0.1) grayscale(0.6);
     height: 192px;
     width: 100%;
+
+    @media only screen and (max-width: 768px) {
+        background-attachment: scroll;
+    }
 }
 .portfolio-item {
     display: flex;
     flex-direction: column;
     margin: 48px;
-    width: 352px;
+    max-width: 352px;
+
+    img {
+        max-width: 100%;
+    }
 }
 .portfolio-links {
     align-self: flex-end;
@@ -170,6 +242,12 @@ h5 {
 .me-container {
     display: flex;
     margin-top: 48px;
+
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin: 48px auto 0 auto;
+        max-width: 536px;
+    }
 }
 .me-image {
     background-image: url("/assets/me.jpg");
@@ -178,6 +256,13 @@ h5 {
     background-size: cover;
     border-radius: 0 16px 16px 0;
     width: 420px;
+
+    @media only screen and (max-width: 1024px) {
+        border-radius: 16px;
+        height: 120px;
+        margin: 0 0 16px 48px;
+        width: 120px;
+    }
 }
 .me-sections {
     display: flex;
