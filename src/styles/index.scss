@@ -22,6 +22,11 @@ h4 {
     font-size: 16px;
     font-weight: 600;
 }
+h5 {
+    color: $text-lighter;
+    font-size: 16px;
+    font-weight: 300;
+}
 
 // front
 .front {
@@ -41,6 +46,7 @@ h4 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 16px 0;
+    filter: opacity(0.3) grayscale(0.2);
     width: 65vw;
 }
 .hero-motto {
@@ -81,10 +87,10 @@ h4 {
     }
 
     @mixin hover-darken($color) {
-        background: $color;
+        // background: $color;
         opacity: 1;
         transition: background .2s ease-out;
-        &:hover { background: darken($color, 5%); }
+        &:hover { background: darken($color, 0%); }
     }
     &.links-code { @include hover-darken($bg-red); }
     &.links-work { @include hover-darken($bg-green); }
@@ -117,8 +123,9 @@ h4 {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 96px;
 
-    h1 { margin-top: 36px; }
+    h1 { margin-top: 48px; }
 }
 .portfolio-container {
     // background: red;
@@ -136,13 +143,12 @@ h4 {
     background-size: cover;
     filter: opacity(0.1) grayscale(0.6);
     height: 180px;
-    margin-top: 96px;
     width: 100%;
 }
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    margin: 36px;
+    margin: 48px;
     width: 352px;
 }
 .portfolio-links {
@@ -156,4 +162,44 @@ h4 {
     border-radius: 8px;
     height: 36px;
     width: 36px;
+}
+
+// about, recruit me
+.me-container {
+    display: flex;
+    margin-top: 48px;
+}
+.me-image {
+    background-image: url("/assets/me.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 16px 16px 0;
+    width: 420px;
+}
+.me-sections {
+    display: flex;
+    flex-direction: column;
+    max-width: 536px;
+    padding: 0 48px;
+
+    p {
+        margin-top: 16px;
+        &:first-of-type { margin-top: 0; }
+    }
+    section {
+        margin-top: 48px;
+        &:first-of-type { margin-top: 0; }
+    }
+}
+.me-text {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+// footer
+footer {
+    margin: 96px 0 16px 0;
+    text-align: center;
 }
