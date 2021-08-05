@@ -4,6 +4,11 @@
 @import "portfolio";
 @import "about";
 
+// animate body loading
+body {
+    transition: opacity .2s ease-out;
+}
+
 // footer
 footer {
     margin: 96px 0 16px 0;

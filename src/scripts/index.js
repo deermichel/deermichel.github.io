@@ -23,3 +23,9 @@ portfolioLink.addEventListener('click', (e) => {
     e.preventDefault()
     portfolioHeader.scrollIntoView({ behavior: 'smooth' })
 })
+
+// load event handler
+window.addEventListener("load", (e) => {
+    // show content after load
+    document.body.style.opacity = null;
+})
