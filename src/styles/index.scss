@@ -46,7 +46,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 16px 0;
-    filter: opacity(0.3) grayscale(0.2);
+    // filter: opacity(0.3) grayscale(0.2);
     width: 65vw;
 }
 .hero-motto {
@@ -109,8 +109,10 @@ h5 {
     }
 }
 .links-container {
+    align-items: center;
     display: flex;
     justify-content: space-between;
+    height: 96px;
     width: 65vw;
 }
 .links-group {
@@ -141,8 +143,8 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: opacity(0.1) grayscale(0.6);
-    height: 180px;
+    // filter: opacity(0.1) grayscale(0.6);
+    height: 192px;
     width: 100%;
 }
 .portfolio-item {
