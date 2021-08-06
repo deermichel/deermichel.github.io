@@ -5,6 +5,8 @@ $bg-red: hsl(0, 14%, 93%);
 $bg-yellow: hsl(48, 14%, 93%);
 $text-lighter: #888;
 $text-regular: #555;
+$text-lighter-dark: #999;
+$text-regular-dark: #eee;
 
 // css baseline
 body {
@@ -18,6 +20,11 @@ body {
     user-select: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #222;
+        color: $text-regular-dark;
+    }
 }
 * {
     margin: 0;
@@ -38,24 +45,29 @@ h1 {
     color: $text-lighter;
     font-size: 36px;
     font-weight: 700;
+    @media (prefers-color-scheme: dark) { color: $text-lighter-dark; }
 }
 h2 {
     color: $text-regular;
     font-size: 24px;
     font-weight: 700;
+    @media (prefers-color-scheme: dark) { color: $text-regular-dark; }
 }
 h3 {
     color: $text-lighter;
     font-size: 24px;
     font-weight: 300;
+    @media (prefers-color-scheme: dark) { color: $text-lighter-dark; }
 }
 h4 {
     color: $text-regular;
     font-size: 16px;
     font-weight: 600;
+    @media (prefers-color-scheme: dark) { color: $text-regular-dark; }
 }
 h5 {
     color: $text-lighter;
     font-size: 16px;
     font-weight: 300;
+    @media (prefers-color-scheme: dark) { color: $text-lighter-dark; }
 }

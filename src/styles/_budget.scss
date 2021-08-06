@@ -5,6 +5,7 @@
 
     h1 {
         color: $text-regular;
+        @media (prefers-color-scheme: dark) { color: $text-regular-dark; }
     }
 
     .header {
