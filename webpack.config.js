@@ -16,5 +16,11 @@ module.exports = {
                 "sass-loader"
             ]
         }]
+    },
+
+    devServer: {
+        static: {
+            directory: __dirname
+        },
     }
 }
