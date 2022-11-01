@@ -36,6 +36,10 @@
     max-width: 352px;
 
     img { max-width: 100%; } // safari fix
+
+    @media only screen and (min-width: 896px) {
+        &.showcase { max-width: 560px; }
+    }
 }
 .portfolio-links {
     align-self: flex-end;
